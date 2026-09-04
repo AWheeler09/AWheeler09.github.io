@@ -136,6 +136,8 @@ nav h1{
 }
 .nav-li a {
   color: #f1f4f3;
+  Background: #6b9184;
+  border: 3px dashed #3d6a5a;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
@@ -146,7 +148,55 @@ nav h1{
     color 0.25s ease;
 }
 .nav-li a:hover {
-  background: #6b9184;
-  color: #8b5b71;
+  background: #3d6a5a;
+  color: #5f2d43;
   border: 3px dashed #f1f4f3;
+}
+/* Portfolio Sytles */
+.content h1 {
+  color:#804861;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#portfolio{
+  list-style: none;
+  margin:0;
+  padding:0;
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  gap:8px;
+}
+#portfolio li{
+  border-radius: 12px;
+  overflow: hidden;
+}
+#portfolio a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color:#8b5b71;
+  padding: 16px 20px;
+  font-size:1.1rem;
+  font-weight:500;
+  background:#f1f4f3;
+  border: 4px dashed #6b9184;
+  border-radius:12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+#portfolio a:hover{
+  background:#3d6a5a;
+  color:#6b9184;
+  transform: translateX(4px);
+  border:4px dashed #804861;
+}
+#portfolio a::after{
+  content:"->";
+  font-size: 0.65rem;
+  opacity: 0.4;
+  transition:opacity 0.25s ease;
+  white-space:nowrap;
+}
+#portfolio a:hover::after{
+  opacity:1;
 }
