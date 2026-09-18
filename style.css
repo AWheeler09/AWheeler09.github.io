@@ -200,3 +200,12 @@ nav h1{
 #portfolio a:hover::after{
   opacity:1;
 }
+.image-gallery{ 
+  display:flex;
+  gap:10px;
+}
+.img-gallery img{
+  width 50px;
+  height: 50px;
+  object-fit: cover;
+}
